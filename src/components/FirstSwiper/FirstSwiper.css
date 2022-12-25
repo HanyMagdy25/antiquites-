@@ -1,0 +1,8 @@
+.firstSwiper-section{
+  margin-top: 20px;
+}
+.firstSwiper-img{
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
