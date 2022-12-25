@@ -1,0 +1,22 @@
+video {
+  width: 100%;
+}
+.services__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px;
+}
+.services__content div {
+  width: 350px;
+  height: 300px;
+  background-color: aqua;
+}
+.services__content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.services__content p {
+  width: 60%;
+}
