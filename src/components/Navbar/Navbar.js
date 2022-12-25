@@ -9,12 +9,13 @@ import { BsInstagram, BsTwitter } from "react-icons/bs";
 import { MdKeyboardArrowDown } from "react-icons/md";
 // Import Images
 import logo from "../../assets/logo.png";
+import Dropdown from "./Dropdown";
 
 const Navbar = ({ userOfLivre }) => {
   const [click, setClick] = useState(false);
+  const [dropNav, setDropNav] = useState(false);
 
   const handleClick = () => setClick(!click);
-
 
   return (
     <>
@@ -55,6 +56,11 @@ const Navbar = ({ userOfLivre }) => {
                 Services
               </NavLink>
             </li>
+            <select className="navbar__select">
+              <option>French</option>
+              <option>English</option>
+            </select>
+       
           </ul>
         </div>
       </nav>

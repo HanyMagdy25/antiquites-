@@ -1,4 +1,30 @@
-.footer__container{
+footer {
+  margin-top: 40px;
+  box-shadow: 1px 1px 15px -10px rgba(0, 0, 0, 0.705);
+  padding: 20px 0;
+  background-color: var(--color-footer);
+}
+.footer__container {
   display: flex;
   justify-content: space-between;
+}
+.footer__contact {
+}
+.footer__contact-title {
+  color: var(--color-blue);
+  margin-bottom: 10px;
+}
+.footer__icon {
+  color: var(--color-blue);
+  margin-right: 5px;
+}
+.footer__follow span {
+  width: 40px;
+  cursor: pointer;
+}
+.footer__follow span:first-child {
+  margin-right: 5px;
+}
+.footer__follow img {
+  width: 100%;
 }

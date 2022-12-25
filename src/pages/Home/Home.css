@@ -2,7 +2,13 @@
   padding: 0 100px;
   margin-top: 10px;
 }
-.secondSwiper-section__title{
+.home__content p {
+  text-align: center;
+}
+.secondSwiper-section__title {
   text-align: center;
   margin-bottom: 15px;
+  color: var(--color-blue);
+  color: var(--color-yellow);
+  font-size: 25px;
 }

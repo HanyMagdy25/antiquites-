@@ -1,5 +1,5 @@
 .navbar {
-  background-color: transparent;
+  background-color: var(--color-footer);
   height: 70px;
   display: flex;
   justify-content: center;
@@ -121,6 +121,15 @@
 }
 .drop-active a {
   color: var(--blue);
+}
+
+.navbar__select{
+  background: transparent;
+    padding: 5px;
+    border-radius: 10px;
+    color: var(--color-blue);
+    border: 0.5px solid var(--color-blue);
+    outline: none;
 }
 /* ======== Media Mobile ======= */
 @media screen and (max-width: 1050px) {

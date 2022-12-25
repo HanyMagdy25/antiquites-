@@ -3,9 +3,12 @@ import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
 import "./Footer.css";
 // icons
-import {BsFillTelephoneFill} from "react-icons/bs"
-import {AiOutlineMail} from "react-icons/ai"
-import {MdLocationOn} from "react-icons/md"
+import { BsFillTelephoneFill } from "react-icons/bs";
+import { AiOutlineMail } from "react-icons/ai";
+import { FaFacebookSquare, FaInstagram } from "react-icons/fa";
+import { MdLocationOn } from "react-icons/md";
+import facebookLogo from "../../assets/facebook.png";
+import instaLogo from "../../assets/Insta.png";
 function footer() {
   return (
     <footer>
@@ -17,21 +20,40 @@ function footer() {
             </Link>
           </div>
         </div>
-        <div>
-          <h2>Contact Us</h2>
+        <div className="footer__contact">
+          <h2 className="footer__contact-title">Contact Us</h2>
           <div>
-            <div>
-              <span><BsFillTelephoneFill/></span> <span>02315456654</span>
+            <div className="flex mb-2">
+              <span className="footer__icon flex-center">
+                <BsFillTelephoneFill />
+              </span>{" "}
+              <span>02315456654</span>
             </div>
-            <div>
-              <span><AiOutlineMail/></span> <span>test@gmail.com</span>
+            <div className="flex mb-2">
+              <span className="footer__icon flex-center">
+                <AiOutlineMail />
+              </span>{" "}
+              <span>test@gmail.com</span>
             </div>
-            <div>
-              <span><MdLocationOn/></span> <span>Mansoura City</span>
+            <div className="flex mb-2">
+              <span className="footer__icon flex-center">
+                <MdLocationOn />
+              </span>{" "}
+              <span>Mansoura City</span>
             </div>
           </div>
         </div>
-        <div></div>
+        <div className="footer__follow">
+          <h2 className="footer__contact-title">Follow Us</h2>
+          <div className="flex">
+            <span className="flex-center">
+              <img src={facebookLogo} alt="facebook" />
+            </span>
+            <span className="flex-center">
+              <img src={instaLogo} alt="instagram" />
+            </span>
+          </div>
+        </div>
       </div>
     </footer>
   );

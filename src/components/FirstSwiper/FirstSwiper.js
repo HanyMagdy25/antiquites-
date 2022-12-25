@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 // Import Swiper React components
 import "./FirstSwiper.css"
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -28,8 +28,8 @@ export default function FirstSwiper() {
         modules={[Pagination, Navigation]}
         className="mySwiper"
       >
-        {swiperData.map((item) => (
-          <SwiperSlide key={item.id}>
+        {swiperData.map((item,index) => (
+          <SwiperSlide key={index}>
             <img src={item.image} alt="antique" className="firstSwiper-img" />
           </SwiperSlide>
         ))}

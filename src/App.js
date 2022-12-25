@@ -4,6 +4,7 @@ import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Home from './pages/Home/Home';
 import Footer from './components/Footer/Footer';
+import Services from './pages/Services/Services';
 
 function App() {
   function ScrollToTop() {
@@ -20,6 +21,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home/>}   />
+        <Route path="/services" element={<Services/>}   />
       </Routes>
       <Footer />
     </BrowserRouter>
