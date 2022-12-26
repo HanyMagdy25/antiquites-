@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/antiquites-/static/css/main.16802441.css",
+    "main.js": "/antiquites-/static/js/main.730d57fd.js",
+    "static/media/vid.mp4": "/antiquites-/static/media/vid.c6612410c747fdca5075.mp4",
+    "static/media/Insta.png": "/antiquites-/static/media/Insta.2e3b4d782b13bc7ad3b5.png",
+    "static/media/facebook.png": "/antiquites-/static/media/facebook.19c9c8d6c005ab25baff.png",
+    "static/media/services.jpeg": "/antiquites-/static/media/services.86caa0a54c4e06cf6596.jpeg",
+    "static/media/logo.png": "/antiquites-/static/media/logo.7e20a0c6bccb55366b01.png",
+    "index.html": "/antiquites-/index.html",
+    "main.16802441.css.map": "/antiquites-/static/css/main.16802441.css.map",
+    "main.730d57fd.js.map": "/antiquites-/static/js/main.730d57fd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.16802441.css",
+    "static/js/main.730d57fd.js"
+  ]
+}
