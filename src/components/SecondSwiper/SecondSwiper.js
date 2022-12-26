@@ -10,7 +10,7 @@ import "swiper/css/pagination";
 
 // import required modules
 import { FreeMode, Pagination } from "swiper";
-import { swiperData } from './../../utils/data';
+import { reviwesData } from './../../utils/data';
 import { useWindowInner } from "../../hooks/useWindowInner";
 
 export default function SecondSwiper() {
@@ -27,7 +27,7 @@ export default function SecondSwiper() {
         modules={[FreeMode, Pagination]}
         className="mySwiper"
       >
-       {swiperData.map((item) => (
+       {reviwesData.map((item) => (
           <SwiperSlide key={item.id}>
             <img src={item.image} alt="antique" className="secondSwiper-img" />
           </SwiperSlide>
