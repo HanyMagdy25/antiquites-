@@ -3,8 +3,8 @@
 }
 .app__social {
   position: fixed;
-  bottom: 150px;
-  right: 30px;
+  bottom: 100px;
+  right: 20px;
   z-index: 999;
 }
 .app__social div {
@@ -36,4 +36,8 @@
 }
 .whats-icon {
   background-color: var(--color-whats) !important;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: var(--color-blue) !important;
 }

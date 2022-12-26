@@ -127,13 +127,6 @@
   .navbar-container {
     padding: 0 10px;
   }
-  .nav-menu.active {
-    background-color: var(--color-blue);
-    left: 0px;
-    opacity: 1;
-    transition: all 0.5s ease;
-    z-index: 1;
-  }
   .navbar-logo img {
     width: 90px;
   }

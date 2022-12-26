@@ -10,6 +10,8 @@
   --color-yellow: #842022;
   --color-yellow1: #e4af57;
   --color-whats: #25d366;
+  /* for swiper color */
+  --swiper-theme-color: #113f7d !important;
 }
 * {
   margin: 0;
