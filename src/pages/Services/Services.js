@@ -1,14 +1,14 @@
 import React from "react";
-import vid from "../../assets/vid.mp4";
+// import vid from "../../assets/vid.mp4";
 import img from "../../assets/services.jpeg";
 import "./Services.css";
+import ContactUs from "../../components/Contact-Us/ContactUs";
+import VideoSection from "../../components/VideoSection/VideoSection";
 function Services() {
   return (
     <div className="services-section">
       <div className="container">
-        <video height="350" controls>
-          <source src={vid} type="video/mp4" />
-        </video>
+       <VideoSection/>
         <div className="services__content">
           <div>
             <img src={img} alt="services" />
@@ -19,6 +19,7 @@ function Services() {
             des experts iraniens. Plus de 50 ans d'expérience dans ce domaine
           </p>
         </div>
+        <ContactUs/>
       </div>
     </div>
   );

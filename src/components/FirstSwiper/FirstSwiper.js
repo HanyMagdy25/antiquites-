@@ -11,14 +11,16 @@ import "swiper/css/navigation";
 // import required modules
 import { Pagination, Navigation } from "swiper";
 import { swiperData } from "../../utils/data";
+import { useWindowInner } from "../../hooks/useWindowInner";
 
 export default function FirstSwiper() {
+  const { isMobile } = useWindowInner();
   return (
     <>
       <Swiper
-        slidesPerView={3}
-        spaceBetween={30}
-        slidesPerGroup={3}
+        slidesPerView={isMobile ? 1 : 3}
+        spaceBetween={60}
+        slidesPerGroup={isMobile ? 1 : 3}
         loop={true}
         loopFillGroupWithBlank={true}
         // pagination={{

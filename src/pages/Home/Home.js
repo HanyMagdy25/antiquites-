@@ -18,7 +18,11 @@ function Home() {
           </p>
         </div>
         <div className="secondSwiper-section">
-          <h3 className="secondSwiper-section__title">Cusotmer Reviews</h3>
+          <div className="flex-center">
+            <div className="secondSwiper-section__title-div">
+              <h2 className="secondSwiper-section__title">Cusotmer Reviews</h2>
+            </div>
+          </div>
           <SecondSwiper />
         </div>
       </div>

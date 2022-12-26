@@ -8,11 +8,11 @@ footer {
   display: flex;
   justify-content: space-between;
 }
-.footer__contact {
-}
 .footer__contact-title {
   color: var(--color-blue);
   margin-bottom: 10px;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 28px;
 }
 .footer__icon {
   color: var(--color-blue);
@@ -27,4 +27,13 @@ footer {
 }
 .footer__follow img {
   width: 100%;
+}
+@media screen and (max-width:1000px) {
+  .footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+    padding: 0 30px;
+  }
 }

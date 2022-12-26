@@ -1,10 +1,11 @@
 import { useEffect } from "react";
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
-import './App.css';
-import Navbar from './components/Navbar/Navbar';
-import Home from './pages/Home/Home';
-import Footer from './components/Footer/Footer';
-import Services from './pages/Services/Services';
+import "./App.css";
+import Navbar from "./components/Navbar/Navbar";
+import Home from "./pages/Home/Home";
+import Footer from "./components/Footer/Footer";
+import Services from "./pages/Services/Services";
+import AppWrap from "./wrapper/AppWrap";
 
 function App() {
   function ScrollToTop() {
@@ -16,17 +17,17 @@ function App() {
   }
   return (
     <div className="App">
-    <BrowserRouter>
-      <ScrollToTop />
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home/>}   />
-        <Route path="/services" element={<Services/>}   />
-      </Routes>
-      <Footer />
-    </BrowserRouter>
-  </div>
+      <BrowserRouter>
+        <ScrollToTop />
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/services" element={<Services />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </div>
   );
 }
 
-export default App;
+export default AppWrap(App);

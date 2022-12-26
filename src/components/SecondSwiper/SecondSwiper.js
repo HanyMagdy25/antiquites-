@@ -11,13 +11,15 @@ import "swiper/css/pagination";
 // import required modules
 import { FreeMode, Pagination } from "swiper";
 import { swiperData } from './../../utils/data';
+import { useWindowInner } from "../../hooks/useWindowInner";
 
 export default function SecondSwiper() {
+  const { isMobile } = useWindowInner();
   return (
     <>
       <Swiper
-        slidesPerView={3}
-        spaceBetween={30}
+        slidesPerView={isMobile ? 1 : 3}
+        spaceBetween={60}
         freeMode={true}
         pagination={{
           clickable: true,

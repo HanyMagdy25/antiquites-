@@ -20,18 +20,14 @@
 .navbar-logo {
   display: flex;
   align-items: center;
-  font-family: sans-serif;
-  font-size: 20px;
+}
+.navbar-logo a {
+  margin-top: 10px;
 }
 .navbar-logo img {
   width: 125px;
   object-fit: cover;
 }
-/* .navbar-logo a {
-  display: flex;
-  align-items: center;
-  color: var(--color-purple);
-} */
 .nav-menu {
   display: flex;
   list-style: none;
@@ -47,7 +43,7 @@
   list-style: none;
   height: 100%; /* the most important*/
   font-size: 18px;
-  transition: all 0.3s ;
+  transition: all 0.3s;
 }
 .nav-links:hover {
   transform: scale(1.05);
@@ -56,11 +52,7 @@
   display: none;
 }
 /* btn-login-div */
-.btn-login-div > span {
-  margin-left: 15px;
-  color: var(--color-purple);
-}
-.profile-navbar{
+.profile-navbar {
   border-radius: 30px;
   border: 1px solid var(--color-purple);
   display: flex;
@@ -68,12 +60,11 @@
   position: relative;
   margin-left: 20px;
 }
-.profile-navbar img{
+.profile-navbar img {
   width: 40px;
   object-fit: cover;
-
 }
-.profile-navbar > span{
+.profile-navbar > span {
   margin-left: 10px;
   color: var(--color-purple);
 }
@@ -109,7 +100,7 @@
 .dropdown-main li a:hover {
   transform: scale(1.07);
 }
-.dropdown-main li a span{
+.dropdown-main li a span {
   margin-left: 4px;
 }
 .drop-active {
@@ -123,86 +114,36 @@
   color: var(--blue);
 }
 
-.navbar__select{
+.navbar__select {
   background: transparent;
-    padding: 5px;
-    border-radius: 10px;
-    color: var(--color-blue);
-    border: 0.5px solid var(--color-blue);
-    outline: none;
+  padding: 5px;
+  border-radius: 10px;
+  color: var(--color-blue);
+  border: 0.5px solid var(--color-blue);
+  outline: none;
 }
 /* ======== Media Mobile ======= */
-@media screen and (max-width: 1050px) {
-  .nav-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100vw;
-    height: 90vh;
-    position: absolute;
-    top: 70px;
-    left: +100%;
-    opacity: 0;
-    transition: all 0.5s ease;
-    overflow-x: hidden;
-  }
+@media screen and (max-width: 1000px) {
   .navbar-container {
-    padding: 0 0px;
+    padding: 0 10px;
   }
   .nav-menu.active {
-    background-color: var(--color-bg);
+    background-color: var(--color-blue);
     left: 0px;
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 1;
   }
-  .nav-links {
-    text-align: center;
-    margin: 10px 0;
-    padding: 1rem 4rem;
-    width: 100%;
-    display: table;
-    color: var(--color-purple);
-    transition: all 0.2s ease-in;
-  }
-  .nav-links:hover {
-    transform: scale(1.1);
-  }
-  .logo-container {
-    width: 100px;
-  }
-  .navbar-logo {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-  }
-  .menu-icon {
-    display: block;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    /* transform: translate(-100%, 60%); */
-    font-size: 1.8rem;
-    cursor: pointer;
-    color: var(--color-purple);
-  }
-  .btn-login-div {
-    position: absolute;
-    top: 15px;
-    left: 60px;
-  }
   .navbar-logo img {
     width: 90px;
-    object-fit: cover;
   }
-  .navbar {
-    padding: 0 0px;
+}
+@media screen and (max-width: 500px) {
+  .nav-links {
+    font-size: 15px;
+    padding: 0.5rem 0.4rem;
   }
-  .btn-login-div span {
-    margin-left: 8px;
-    color: var(--color-purple);
-  }
-  .profile-navbar{
-    margin-left: 0px;
+  .navbar__select {
+    padding: 4px;
   }
 }

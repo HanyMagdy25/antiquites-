@@ -5,7 +5,6 @@ import "./Footer.css";
 // icons
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
-import { FaFacebookSquare, FaInstagram } from "react-icons/fa";
 import { MdLocationOn } from "react-icons/md";
 import facebookLogo from "../../assets/facebook.png";
 import instaLogo from "../../assets/Insta.png";
@@ -27,13 +26,13 @@ function footer() {
               <span className="footer__icon flex-center">
                 <BsFillTelephoneFill />
               </span>{" "}
-              <span>02315456654</span>
+              <span>003758035776</span>
             </div>
             <div className="flex mb-2">
               <span className="footer__icon flex-center">
                 <AiOutlineMail />
               </span>{" "}
-              <span>test@gmail.com</span>
+              <span>mahmoud123.kh@icloud.com</span>
             </div>
             <div className="flex mb-2">
               <span className="footer__icon flex-center">
