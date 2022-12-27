@@ -1,17 +1,21 @@
 footer {
-  margin-top: 40px;
+  margin-top: 60px;
   box-shadow: 1px 1px 15px -10px rgba(0, 0, 0, 0.705);
-  padding: 20px 0;
+  padding: 20px 0 0 0;
   background-color: var(--color-footer);
 }
 .footer__container {
   display: flex;
   justify-content: space-between;
+  padding: 0 130px;
+}
+.footer-logo img {
+  width: 150px;
 }
 .footer__contact-title {
   color: var(--color-blue);
   margin-bottom: 10px;
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   font-size: 28px;
 }
 .footer__icon {
@@ -28,12 +32,39 @@ footer {
 .footer__follow img {
   width: 100%;
 }
-@media screen and (max-width:1000px) {
+.footer__bottom {
+  background-color: var(--color-black);
+}
+.footer__bottom__container {
+  padding: 10px 130px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__bottom span {
+  color: var(--color-white);
+  font-size: 12px;
+}
+.footer__bottom a {
+  color: var(--color-white);
+}
+.footer__bottom__techno {
+  margin-left: 3px;
+  transition: all 0.1s;
+}
+.footer__bottom__techno:hover {
+  color: var(--color-blue);
+}
+@media screen and (max-width: 1000px) {
   .footer__container {
     display: flex;
     flex-wrap: wrap;
-    /* flex-direction: column; */
-    /* justify-content: space-between; */
-    padding: 0 30px;
+    padding: 0 30px 20px 30px;
+  }
+  .footer__bottom__container {
+    padding: 5px 30px;
+    flex-direction: column;
+  }
+  .footer__follow {
+    margin-top: 15px;
   }
 }

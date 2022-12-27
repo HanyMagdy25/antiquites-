@@ -20,7 +20,7 @@ export default function FirstSwiper() {
       <Swiper
         slidesPerView={isMobile ? 1 : 3}
         spaceBetween={60}
-        slidesPerGroup={isMobile ? 1 : 3}
+        slidesPerGroup={1}
         loop={true}
         loopFillGroupWithBlank={true}
         // pagination={{

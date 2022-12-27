@@ -5,9 +5,6 @@
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
-  top: 0;
-  /* position: sticky; */
-  z-index: 2;
   box-shadow: 1px 1px 15px -10px rgba(0, 0, 0, 0.705);
 }
 .navbar-container {
@@ -34,6 +31,12 @@
   text-align: center;
   align-items: center;
 }
+.nav-item {
+  border-bottom: 3px solid transparent;
+}
+.nav-item > .active{
+  border-bottom: 3px solid var(--color-blue);
+}
 .nav-links {
   color: var(--color-blue);
   display: flex;
@@ -44,74 +47,13 @@
   height: 100%; /* the most important*/
   font-size: 18px;
   transition: all 0.3s;
+  border-bottom: 3px solid transparent;
 }
 .nav-links:hover {
   transform: scale(1.05);
 }
 .menu-icon {
   display: none;
-}
-/* btn-login-div */
-.profile-navbar {
-  border-radius: 30px;
-  border: 1px solid var(--color-purple);
-  display: flex;
-  align-items: center;
-  position: relative;
-  margin-left: 20px;
-}
-.profile-navbar img {
-  width: 40px;
-  object-fit: cover;
-}
-.profile-navbar > span {
-  margin-left: 10px;
-  color: var(--color-purple);
-}
-/* =========== dropdown */
-
-.dropdown-main {
-  background-color: var(--color-white);
-  transition: all 0.3s ease-in-out;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  padding: 10px;
-  list-style: none;
-  z-index: 99;
-  position: absolute;
-  top: 42px;
-  border-radius: 15px;
-  right: 0px;
-  width: 130px;
-}
-.dropdown-main li {
-  margin: 4px 0;
-}
-.dropdown-main li a {
-  color: var(--color-purple);
-  transition: all 0.2s ease-in-out;
-  font-size: 14px;
-  font-weight: 500;
-  display: flex;
-  align-items: center;
-  margin: 3px 0;
-}
-.dropdown-main li a:hover {
-  transform: scale(1.07);
-}
-.dropdown-main li a span {
-  margin-left: 4px;
-}
-.drop-active {
-  background-color: var(--color-white);
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-  transition: all 0.3s ease-in-out;
-  /* border-bottom: 5px solid var(--blue) ; */
-}
-.drop-active a {
-  color: var(--blue);
 }
 
 .navbar__select {
@@ -121,6 +63,7 @@
   color: var(--color-blue);
   border: 0.5px solid var(--color-blue);
   outline: none;
+  margin-left: 10px;
 }
 /* ======== Media Mobile ======= */
 @media screen and (max-width: 1000px) {
@@ -138,5 +81,6 @@
   }
   .navbar__select {
     padding: 4px;
+    /* margin-left: 10px; */
   }
 }

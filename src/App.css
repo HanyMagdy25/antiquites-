@@ -35,8 +35,32 @@
 .whats-icon {
   background-color: var(--color-whats) !important;
 }
-
+/* ----- Swiper Css ----- */
 .swiper-button-next,
 .swiper-button-prev {
   color: var(--color-blue) !important;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  background: #e6eefa48 !important;
+  border-radius: 50% !important;
+  width: 50px !important;
+  height: 50px !important;
+  transition: all 0.1s;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: #e6eefaa9 !important;
+}
+.swiper-button-next::after,
+.swiper-button-prev:after {
+  font-size: 20px !important;
+  font-weight: 800 !important;
+}
+.swiper-pagination-bullet {
+  width: 15px !important;
+  height: 15px !important;
+}
+.swiper{
+  padding: 5px !important;
 }

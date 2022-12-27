@@ -13,9 +13,9 @@ function footer() {
     <footer>
       <div className="container footer__container">
         <div>
-          <div className="navbar-logo">
+          <div className="footer-logo">
             <Link to="/">
-              <img src={logo} alt="Livre" loading="lazy" />
+              <img src={logo} alt="logo" loading="lazy" />
             </Link>
           </div>
         </div>
@@ -46,12 +46,44 @@ function footer() {
           <h2 className="footer__contact-title">Follow Us</h2>
           <div className="flex">
             <span className="flex-center">
-              <img src={facebookLogo} alt="facebook" />
+              <a
+                className="flex-center"
+                href="https://www.google.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={facebookLogo} alt="facebook" />
+              </a>
             </span>
             <span className="flex-center">
-              <img src={instaLogo} alt="instagram" />
+              <a
+                className="flex-center"
+                href="https://www.google.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={instaLogo} alt="instagram" />
+              </a>
             </span>
           </div>
+        </div>
+      </div>
+      <div className="footer__bottom">
+        <div className="container footer__bottom__container">
+          <span>
+            © All copyrights to Mahmoud Antiquites {new Date().getFullYear()}
+          </span>
+          <span>
+              Created by 
+            <a
+            className="footer__bottom__techno"
+              href="https://www.google.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Technomasr
+            </a>
+          </span>
         </div>
       </div>
     </footer>

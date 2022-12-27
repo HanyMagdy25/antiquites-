@@ -1,5 +1,5 @@
 :root {
-  /* Colors: */  
+  /* Colors: */
   --color-black: #111110;
   --color-white: #ffffff;
   --color-blue: #113f7d;
@@ -17,7 +17,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   /* font-family: 'Bebas Neue', cursive; */
 }
 body {
@@ -107,23 +107,26 @@ textarea {
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-.btn-w-50{
-width: 50%;
-margin-top: 10px;
-margin-right: auto;
+.btn-w-50 {
+  width: 50%;
+  margin-top: 10px;
+  margin-right: auto;
 }
-.btn-w-100{
-width: 100%;
-margin-top: 10px;
-padding: 0.763rem 1.563rem;
-border-radius: 0.513rem;
+.btn-w-100 {
+  width: 100%;
+  margin-top: 10px;
+  padding: 0.763rem 1.563rem;
+  border-radius: 0.513rem;
 }
-.mb-2{
+.mb-2 {
   margin-bottom: 2px;
 }
-.mb-10{
+.mb-10 {
   margin-bottom: 10px;
 }
-textarea{
+textarea {
   resize: none;
+}
+.box-shadow {
+  box-shadow: 0px 1px 7px 0px rgb(0 0 0 / 12%);
 }

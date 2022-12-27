@@ -19,7 +19,7 @@ const Navbar = ({ userOfLivre }) => {
         <div className="navbar-container container">
           <div className="navbar-logo">
             <Link to="/">
-              <img src={logo} alt="Livre" loading="lazy" />
+              <img src={logo} alt="logo" loading="lazy" />
             </Link>
           </div>
 

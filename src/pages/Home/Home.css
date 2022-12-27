@@ -1,14 +1,22 @@
+.home-section{
+  padding: 30px 0;
+}
 .home__content {
   padding: 0 100px;
-  margin-top: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: var(--color-footer);
+}
+.home__content__container{
+  padding: 50px 130px;
 }
 .home__content p {
-  line-height: 1.45;
+  line-height: 1.55;
   color: #1e1d1d;
   text-align: center;
-  font-size: 20px;
-  margin-top: 5px;
-  margin-bottom: 50px;
+  font-size: 22px;
+  /* margin-top: 5px; */
+  color: var(--color-blue);
 }
 .secondSwiper-section__title-div {
   color: #bababa;
@@ -51,11 +59,13 @@
 @media screen and (max-width: 1000px) {
   .home__content {
     padding: 0 10px;
-    margin-top: 10px;
   }
 }
 @media screen and (max-width: 700px) {
   .secondSwiper-section__title {
     font-size: 30px;
+  }
+  .home__content__container{
+    padding: 30px 20px;
   }
 }

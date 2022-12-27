@@ -6,6 +6,7 @@
   height: 400px;
   object-fit: cover;
   border-radius: 3px;
+  box-shadow: 4px 4px 7px -3px rgb(0 0 0 / 58%);
 }
 
 @media screen and (max-width: 700px) {
