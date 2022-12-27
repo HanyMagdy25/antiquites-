@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/antiquites-/static/css/main.02ac17e4.css",
+    "main.css": "/antiquites-/static/css/main.52794360.css",
     "main.js": "/antiquites-/static/js/main.11b1063b.js",
     "static/media/vid.mp4": "/antiquites-/static/media/vid.c6612410c747fdca5075.mp4",
     "static/media/services.jpeg": "/antiquites-/static/media/services.86caa0a54c4e06cf6596.jpeg",
     "static/media/logo.png": "/antiquites-/static/media/logo.7e20a0c6bccb55366b01.png",
     "index.html": "/antiquites-/index.html",
-    "main.02ac17e4.css.map": "/antiquites-/static/css/main.02ac17e4.css.map",
+    "main.52794360.css.map": "/antiquites-/static/css/main.52794360.css.map",
     "main.11b1063b.js.map": "/antiquites-/static/js/main.11b1063b.js.map"
   },
   "entrypoints": [
-    "static/css/main.02ac17e4.css",
+    "static/css/main.52794360.css",
     "static/js/main.11b1063b.js"
   ]
 }
