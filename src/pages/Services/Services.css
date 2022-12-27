@@ -3,10 +3,11 @@
 }
 video {
   width: 100%;
-  height: 400px;
+  height: 500px;
 }
 .services__content {
   background: var(--color-footer);
+  margin-top: 20px;
 }
 .services__content__container{
   display: flex;
@@ -37,7 +38,7 @@ video {
   margin-bottom: 50px;
 }
 @media screen and (max-width: 700px) {
-  .services__content {
+  .services__content__container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,11 +47,19 @@ video {
   }
   .services__content p {
     width: 100%;
+    padding: 10px 0;
+    text-align: center;
   }
   .videoSection {
-    padding: 50px 10px 50px 10px;
+    padding: 40px 10px 40px 10px;
   }
   .videoSection__content {
     margin-bottom: 0px;
+  }
+  video {
+    width: 100%;
+    height: unset;
+    border-radius: 3px;
+    margin-top: 20px;
   }
 }

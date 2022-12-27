@@ -64,7 +64,7 @@
 @media screen and (max-width:700px) {
   .contactUs {
     padding: 0 0px;
-    margin-top: 100px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;

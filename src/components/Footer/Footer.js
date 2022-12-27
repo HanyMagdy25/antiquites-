@@ -45,7 +45,7 @@ function footer() {
         <div className="footer__follow">
           <h2 className="footer__contact-title">Follow Us</h2>
           <div className="flex">
-            <span className="flex-center">
+            <span className="flex-center footer__follow__icon">
               <a
                 className="flex-center"
                 href="https://www.google.com/"
@@ -55,7 +55,7 @@ function footer() {
                 <img src={facebookLogo} alt="facebook" />
               </a>
             </span>
-            <span className="flex-center">
+            <span className="flex-center footer__follow__icon">
               <a
                 className="flex-center"
                 href="https://www.google.com/"

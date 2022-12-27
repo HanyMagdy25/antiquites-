@@ -3,7 +3,7 @@ import * as React from "react";
 // Hooks React
 const { useLayoutEffect, useState } = React;
 
-export const useWindowInner = (width = 760) => {
+export const useWindowInner = (width = 800) => {
   let innerWidth;
   let innerHeight;
 

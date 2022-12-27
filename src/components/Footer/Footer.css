@@ -32,6 +32,14 @@ footer {
 .footer__follow img {
   width: 100%;
 }
+.footer__follow__icon{
+  transition: all 0.3s;
+
+}
+
+.footer__follow__icon:hover{
+  transform: scale(1.1);
+}
 .footer__bottom {
   background-color: var(--color-black);
 }
@@ -62,9 +70,13 @@ footer {
   }
   .footer__bottom__container {
     padding: 5px 30px;
-    flex-direction: column;
   }
   .footer__follow {
     margin-top: 15px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .footer__bottom__container {
+    flex-direction: column;
   }
 }
