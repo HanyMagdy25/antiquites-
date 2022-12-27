@@ -6,15 +6,17 @@ video {
   height: 400px;
 }
 .services__content {
+  background: var(--color-footer);
+}
+.services__content__container{
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 100px;
 }
-.services__content div {
+.services__content .services__content-img {
   width: 350px;
   height: 300px;
-  /* background-color: aqua; */
 }
 .services__content img {
   width: 100%;
@@ -24,6 +26,7 @@ video {
 }
 .services__content p {
   width: 60%;
+  color: var(--color-blue);
 }
 .videoSection__content {
   line-height: 1.45;

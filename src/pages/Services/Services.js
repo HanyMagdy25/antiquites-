@@ -7,10 +7,13 @@ import VideoSection from "../../components/VideoSection/VideoSection";
 function Services() {
   return (
     <div className="services-section">
+      {/* <div className="container"> */}
       <div className="container">
-       <VideoSection/>
-        <div className="services__content">
-          <div>
+        <VideoSection />
+      </div>
+      <div className="services__content">
+        <div className="services__content__container container">
+          <div className="services__content-img">
             <img src={img} alt="services" />
           </div>
           <p>
@@ -19,8 +22,9 @@ function Services() {
             des experts iraniens. Plus de 50 ans d'expérience dans ce domaine
           </p>
         </div>
-        <ContactUs/>
       </div>
+      <ContactUs />
+      {/* </div> */}
     </div>
   );
 }
