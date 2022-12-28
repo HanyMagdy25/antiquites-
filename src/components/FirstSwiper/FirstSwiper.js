@@ -10,10 +10,9 @@ import "swiper/css/navigation";
 
 // import required modules
 import { Pagination, Navigation } from "swiper";
-import { swiperData } from "../../utils/data";
 import { useWindowInner } from "../../hooks/useWindowInner";
-
-export default function FirstSwiper() {
+const url_main = "https://dashboard.mahmoud-antiquites.com/";
+export default function FirstSwiper({photos}) {
   const { isMobile } = useWindowInner();
   return (
     <>
@@ -23,16 +22,13 @@ export default function FirstSwiper() {
         slidesPerGroup={1}
         loop={true}
         loopFillGroupWithBlank={true}
-        // pagination={{
-        //   clickable: true,
-        // }}
         navigation={true}
         modules={[Pagination, Navigation]}
         className="mySwiper"
       >
-        {swiperData.map((item,index) => (
+        {photos.map((item,index) => (
           <SwiperSlide key={index}>
-            <img src={item.image} alt="antique" className="firstSwiper-img" />
+            <img src={`${url_main}/public/uploads/photos/${item.photo}`} alt="antique" className="firstSwiper-img" />
           </SwiperSlide>
         ))}
       </Swiper>

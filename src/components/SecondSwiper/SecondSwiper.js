@@ -10,10 +10,9 @@ import "swiper/css/pagination";
 
 // import required modules
 import { FreeMode, Pagination } from "swiper";
-import { reviwesData } from './../../utils/data';
 import { useWindowInner } from "../../hooks/useWindowInner";
-
-export default function SecondSwiper() {
+const url_main = "https://dashboard.mahmoud-antiquites.com/";
+export default function SecondSwiper({reviews}) {
   const { isMobile } = useWindowInner();
   return (
     <>
@@ -27,9 +26,9 @@ export default function SecondSwiper() {
         modules={[FreeMode, Pagination]}
         className="mySwiper"
       >
-       {reviwesData.map((item) => (
+       {reviews.map((item) => (
           <SwiperSlide key={item.id}>
-            <img src={item.image} alt="antique" className="secondSwiper-img" />
+            <img src={`${url_main}/public/uploads/reviews/${item.photo}`} alt="antique" className="secondSwiper-img" />
           </SwiperSlide>
         ))}
       </Swiper>

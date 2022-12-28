@@ -5,11 +5,11 @@ import { Link, NavLink } from "react-router-dom";
 import "./Navbar.css";
 // Import Icons
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-// Import Images
-import logo from "../../assets/logo.png";
 
-const Navbar = ({ userOfLivre }) => {
+const Navbar = ({ siteLogo,setLang }) => {
   const [click, setClick] = useState(false);
+  // const [lang, setLang] = useState("fr");
+
 
   const handleClick = () => setClick(!click);
 
@@ -19,7 +19,7 @@ const Navbar = ({ userOfLivre }) => {
         <div className="navbar-container container">
           <div className="navbar-logo">
             <Link to="/">
-              <img src={logo} alt="logo" loading="lazy" />
+              <img src={siteLogo} alt="logo" loading="lazy" />
             </Link>
           </div>
 
@@ -52,11 +52,13 @@ const Navbar = ({ userOfLivre }) => {
                 Services
               </NavLink>
             </li>
-            <select className="navbar__select">
-              <option>French</option>
-              <option>English</option>
+            <select
+              onChange={(e) => setLang(e.target.value)}
+              className="navbar__select"
+            >
+              <option value="fr">French</option>
+              <option value="en">English</option>
             </select>
-       
           </ul>
         </div>
       </nav>

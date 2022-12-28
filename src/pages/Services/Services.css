@@ -17,6 +17,7 @@ video {
 }
 .services__content .services__content-img {
   width: 350px;
+  min-width: 350px;
   height: 300px;
 }
 .services__content img {
@@ -26,7 +27,7 @@ video {
   border-radius: 3px;
 }
 .services__content p {
-  width: 60%;
+  width: 85%;
   color: var(--color-blue);
 }
 .videoSection__content {
@@ -36,6 +37,12 @@ video {
   font-size: 20px;
   margin-top: 5px;
   margin-bottom: 50px;
+}
+@media screen and (max-width: 1000px) {
+  .services__content p {
+    width: 100%;
+    padding: 0px;
+  }
 }
 @media screen and (max-width: 700px) {
   .services__content__container {

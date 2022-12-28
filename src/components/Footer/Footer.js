@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../../assets/logo.png";
 import "./Footer.css";
 // icons
 import { BsFillTelephoneFill } from "react-icons/bs";
@@ -8,14 +7,14 @@ import { AiOutlineMail } from "react-icons/ai";
 import { MdLocationOn } from "react-icons/md";
 import facebookLogo from "../../assets/facebook.png";
 import instaLogo from "../../assets/Insta.png";
-function footer() {
+function footer({ contact_data, social }) {
   return (
     <footer>
       <div className="container footer__container">
         <div>
           <div className="footer-logo">
             <Link to="/">
-              <img src={logo} alt="logo" loading="lazy" />
+              <img src={contact_data.footerImage} alt="logo" loading="lazy" />
             </Link>
           </div>
         </div>
@@ -26,19 +25,19 @@ function footer() {
               <span className="footer__icon flex-center">
                 <BsFillTelephoneFill />
               </span>{" "}
-              <span>003758035776</span>
+              <span>{contact_data.phone}</span>
             </div>
             <div className="flex mb-2">
               <span className="footer__icon flex-center">
                 <AiOutlineMail />
               </span>{" "}
-              <span>mahmoud123.kh@icloud.com</span>
+              <span>{contact_data.email}</span>
             </div>
             <div className="flex mb-2">
               <span className="footer__icon flex-center">
                 <MdLocationOn />
               </span>{" "}
-              <span>Mansoura City</span>
+              <span>{contact_data.address}</span>
             </div>
           </div>
         </div>
@@ -48,7 +47,7 @@ function footer() {
             <span className="flex-center footer__follow__icon">
               <a
                 className="flex-center"
-                href="https://www.google.com/"
+                href={social.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -58,7 +57,7 @@ function footer() {
             <span className="flex-center footer__follow__icon">
               <a
                 className="flex-center"
-                href="https://www.google.com/"
+                href={social.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -74,9 +73,9 @@ function footer() {
             © All copyrights to Mahmoud Antiquites {new Date().getFullYear()}
           </span>
           <span>
-              Created by 
+            Created by
             <a
-            className="footer__bottom__techno"
+              className="footer__bottom__techno"
               href="https://www.google.com/"
               target="_blank"
               rel="noopener noreferrer"
