@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 const url_main = "https://dashboard.mahmoud-antiquites.com/api";
 
-function VideoSection() {
+function VideoSection({ lang }) {
   const [vid, setVid] = useState({});
   useEffect(() => {
     fetch(`${url_main}/video`, {
@@ -26,9 +26,9 @@ function VideoSection() {
         </div>
       </div>
       <p className="videoSection__content">
-        Nous avons les dernières machines de nettoyage et de détachage de tapis.
-        Une section spéciale pour réparer les tapis à la main avec des experts
-        iraniens. Plus de 50 ans d'expérience dans ce domaine
+        {lang === "fr"
+          ? "Cette vidéo explique comment nous nettoyons nos tapis"
+          : "This video explains how we clean our carpets"}
       </p>
       {vid.status === 1 && (
         <video controls>

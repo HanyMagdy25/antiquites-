@@ -32,7 +32,7 @@ video {
 }
 .videoSection__content {
   line-height: 1.45;
-  color: #1e1d1d;
+  color: var(--color-blue);
   text-align: center;
   font-size: 20px;
   margin-top: 5px;

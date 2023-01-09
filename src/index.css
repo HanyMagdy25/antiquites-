@@ -2,11 +2,11 @@
   /* Colors: */
   --color-black: #111110;
   --color-white: #ffffff;
-  --color-blue: #113f7d;
-  --color-bg: #f8f8f8;
+  --color-blue: #ffff;
+  --color-bg: #1a224e;
   --color-purple: #7338a4;
   --color-red: #f5344e;
-  --color-footer: #b9d6ff48;
+  --color-footer: #144272;
   --color-yellow: #842022;
   --color-yellow1: #e4af57;
   --color-whats: #25d366;
@@ -75,6 +75,9 @@ button {
 }
 .text-center {
   text-align: center;
+}
+.flex-column{
+  flex-direction: column;
 }
 .container {
   margin-left: auto;

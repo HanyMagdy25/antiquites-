@@ -3,7 +3,7 @@ import "./Services.css";
 import ContactUs from "../../components/Contact-Us/ContactUs";
 import VideoSection from "../../components/VideoSection/VideoSection";
 import Spinner from "../../components/Spinner/Spinner";
-function Services({ aboutUs, loading }) {
+function Services({ aboutUs, loading ,lang}) {
   return (
     <>
       {loading ? (
@@ -11,7 +11,7 @@ function Services({ aboutUs, loading }) {
       ) : (
         <div className="services-section">
           <div className="container">
-            <VideoSection />
+            <VideoSection lang={lang} />
           </div>
           <div className="services__content">
             <div className="services__content__container container">
@@ -19,12 +19,12 @@ function Services({ aboutUs, loading }) {
                 <img src={aboutUs.aboutusPhoto} alt="services" />
               </div>
               <div
-                className="flex-center"
+                className="flex-center flex-column"
                 dangerouslySetInnerHTML={{ __html: aboutUs.Description }}
               />
             </div>
           </div>
-          <ContactUs />
+          <ContactUs lang={lang}/>
         </div>
       )}
     </>

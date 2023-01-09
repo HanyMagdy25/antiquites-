@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./ContactUs.css";
 const url_main = "https://dashboard.mahmoud-antiquites.com/api";
-function ContactUs() {
+function ContactUs({ lang }) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -10,7 +10,7 @@ function ContactUs() {
 
   const handleContact = (e) => {
     e.preventDefault();
-    const blog = { name, phone, content:text, email };
+    const blog = { name, phone, content: text, email };
     fetch(`${url_main}/sendContactMessage`, {
       method: "POST",
       // credentials: "include",
@@ -22,9 +22,9 @@ function ContactUs() {
     })
       .then((data) => data.json())
       .then((res) => {
-        setDone(res.status)
+        setDone(res.status);
 
-        console.log("res",res)
+        console.log("res", res);
         if (res.status === "success") {
           setName("");
           setText("");
@@ -39,24 +39,24 @@ function ContactUs() {
         <div className="flex-center">
           <div className="secondSwiper-section__title-div">
             <h2 className="contactUs__title secondSwiper-section__title">
-              Contact us
+              {lang === "fr" ? "Contactez-nous" : "Contact Us"}
             </h2>
           </div>
         </div>
         <form className="contactUs__form " onSubmit={handleContact}>
           <input
             type="text"
-            placeholder="Name"
+            placeholder={lang === "fr" ? "Nom" : "Name"}
             onChange={(e) => setName(e.target.value)}
           />
           <input
             type="email"
-            placeholder="Email"
+            placeholder={lang === "fr" ? "Adresse e-mail" : "Email"}
             onChange={(e) => setEmail(e.target.value)}
           />
           <input
             type="tel"
-            placeholder="Phone"
+            placeholder={lang === "fr" ? "Téléphone" : "Phone"}
             onChange={(e) => setPhone(e.target.value)}
           />
           <textarea
@@ -64,7 +64,7 @@ function ContactUs() {
             onChange={(e) => setText(e.target.value)}
           />
           <button type="submit" className="">
-            SUBMIT
+            {lang === "fr" ? "Envoyer" : "SUBMIT"}
           </button>
           {done === "success" && <p className="contact__done">Sent</p>}
           {done === "faild" && <p className="contact__done">Failed to send</p>}

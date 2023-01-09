@@ -7,7 +7,12 @@ import { AiOutlineMail } from "react-icons/ai";
 import { MdLocationOn } from "react-icons/md";
 import facebookLogo from "../../assets/facebook.png";
 import instaLogo from "../../assets/Insta.png";
-function footer({ contact_data, social }) {
+import youtubeLogo from "../../assets/youtube.png";
+import twitterLogo from "../../assets/twitter.png";
+import linkedinLogo from "../../assets/linkedin.png";
+function footer({ contact_data, social, lang }) {
+  console.log("contact_data", contact_data);
+  console.log("social", social);
   return (
     <footer>
       <div className="container footer__container">
@@ -19,7 +24,10 @@ function footer({ contact_data, social }) {
           </div>
         </div>
         <div className="footer__contact">
-          <h2 className="footer__contact-title">Contact Us</h2>
+          <h2 className="footer__contact-title">
+            {" "}
+            {lang === "fr" ? "Contactez-nous" : "Contact Us"}
+          </h2>
           <div>
             <div className="flex mb-2">
               <span className="footer__icon flex-center">
@@ -62,6 +70,36 @@ function footer({ contact_data, social }) {
                 rel="noopener noreferrer"
               >
                 <img src={instaLogo} alt="instagram" />
+              </a>
+            </span>
+            <span className="flex-center footer__follow__icon">
+              <a
+                className="flex-center"
+                href={social.twitter}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={twitterLogo} alt="twitter" />
+              </a>
+            </span>
+            <span className="flex-center footer__follow__icon">
+              <a
+                className="flex-center"
+                href={social.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={linkedinLogo} alt="linkedin" />
+              </a>
+            </span>
+            <span className="flex-center footer__follow__icon">
+              <a
+                className="flex-center"
+                href={social.youtube}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={youtubeLogo} alt="youtube" />
               </a>
             </span>
           </div>

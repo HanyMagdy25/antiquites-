@@ -62,10 +62,10 @@ function App() {
           />
           <Route
             path="/services"
-            element={<Services loading={loading} aboutUs={aboutUs} />}
+            element={<Services loading={loading} aboutUs={aboutUs} lang={lang} />}
           />
         </Routes>
-        <Footer contact_data={contact_data} social={social} />
+        <Footer contact_data={contact_data} social={social} lang={lang}/>
       </BrowserRouter>
     </div>
   );
