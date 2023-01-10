@@ -114,7 +114,7 @@ function footer({ contact_data, social, lang }) {
             Created by
             <a
               className="footer__bottom__techno"
-              href="https://www.google.com/"
+              href="https://technomasr.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
